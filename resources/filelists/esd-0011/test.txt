@@ -1,0 +1,150 @@
+0011_000021|As rich as Peter's son in law!|Neutral
+0011_000022|And what are doves. And what are doves.|Neutral
+0011_000023|I thought you meant how old are you?|Neutral
+0011_000024|The football teams give a tea party.|Neutral
+0011_000025|She is now choosing skirt to wear.|Neutral
+0011_000026|Let's make the noise like a snake.|Neutral
+0011_000027|Monster made a deep bow.|Neutral
+0011_000028|She had said, so that one could keep up a conversation!|Neutral
+0011_000029|Rat came and replied on the leaves.|Neutral
+0011_000030|Must a name mean something?|Neutral
+0011_000031|All smile were real and the happier the more sincere .|Neutral
+0011_000032|Who is been repeating all that hard stuff to you?|Neutral
+0011_000033|This used to be Jerry's occupation.|Neutral
+0011_000034|A divine wrath made her blue eyes awful.|Neutral
+0011_000035|The name really is the agedaged man.|Neutral
+0011_000036|How I hate this foul pool!|Neutral
+0011_000037|I think it'll encourage me.|Neutral
+0011_000038|Hold up my chin, slow and solid.|Neutral
+0011_000039|Our thanks to God's oath.|Neutral
+0011_000040|In which fox loses a tail and its elder sister finds one.|Neutral
+0011_000041|I chose the right way.|Neutral
+0011_000042|She may mind ye of her.|Neutral
+0011_000043|Story twenty nine a boy and a monkey.|Neutral
+0011_000044|Take courage all isn't lost yet.|Neutral
+0011_000045|The nastiest things they saw were the cobwebs.|Neutral
+0011_000046|They'd never know I'd regular ran away.|Neutral
+0011_000047|please excuse me.|Neutral
+0011_000048|You are not a runaway,who are you?|Neutral
+0011_000049|Then we all say aha!|Neutral
+0011_000050|Rabbit gave dog a hurrying up sort of nudge.|Neutral
+0011_000371|As rich-as Peter's son in law!|Angry
+0011_000372|And what are doves. And what are doves.|Angry
+0011_000373|I thought you meant how old are you?|Angry
+0011_000374|The football teams give a tea party.|Angry
+0011_000375|She is now choosing skirt to wear.|Angry
+0011_000376|Let's make the noise a snake.|Angry
+0011_000377|Monster made a deep bow.|Angry
+0011_000378|She had said, so that one could keep up a conversation!|Angry
+0011_000379|Rat came and replied on the leaves.|Angry
+0011_000380|Must a name mean something?|Angry
+0011_000381|All smile were real and the happier the more sincere .|Angry
+0011_000382|Who is been repeating all that hard stuff to you?|Angry
+0011_000383|This used to be Jerry's occupation.|Angry
+0011_000384|A divine wrath made her blue eyes awful.|Angry
+0011_000385|The name really is the agedaged man.|Angry
+0011_000386|How I hate this foul pool!|Angry
+0011_000387|I think it'll encourage me.|Angry
+0011_000388|Hold up my chin, slow and solid.|Angry
+0011_000389|Our thanks to God's oath.|Angry
+0011_000390|In which fox loses a tail and its elder sister finds one.|Angry
+0011_000391|I chose the right way.|Angry
+0011_000392|She may mind ye of her.|Angry
+0011_000393|Story twenty nine a boy and a monkey.|Angry
+0011_000394|Take courage all isn't lost yet.|Angry
+0011_000395|The nastiest things they saw were the cobwebs.|Angry
+0011_000396|They'd never know I'd regular ran away.|Angry
+0011_000397|please excuse me.|Angry
+0011_000398|You are not a runaway,who are you?|Angry
+0011_000399|Then we all say aha!|Angry
+0011_000400|Rabbit gave dog a hurrying up sort of nudge.|Angry
+0011_000721|As rich as Peter's son in law!|Happy
+0011_000722|And what are doves. And what are doves.|Happy
+0011_000723|I thought you meant how old are you?|Happy
+0011_000724|The football teams give a tea party.|Happy
+0011_000725|She is now choosing skirt to wear.|Happy
+0011_000726|Let's make the noise a snake.|Happy
+0011_000727|Monster made a deep bow.|Happy
+0011_000728|She had said, so that no one could keep up a conversation!|Happy
+0011_000729|Rat came and replied on the leaves.|Happy
+0011_000730|Must a name mean something?|Happy
+0011_000731|All smile were real and the happier the more sincere .|Happy
+0011_000732|Who is repeating all that hard stuff to you?|Happy
+0011_000733|This used to be Jerry's occupation.|Happy
+0011_000734|A divine wrath made her blue eyes awful.|Happy
+0011_000735|The name really is an agedaged man.|Happy
+0011_000736|How I hate this foul pool!|Happy
+0011_000737|I think it'll encourage me.|Happy
+0011_000738|Hold up my chin, slow and solid.|Happy
+0011_000739|Our thanks to God's oath.|Happy
+0011_000740|In which fox loses a tail and its elder sister finds one.|Happy
+0011_000741|I chose the right way.|Happy
+0011_000742|She may mind ye of her.|Happy
+0011_000743|Story twenty nine a boy and a monkey.|Happy
+0011_000744|Take courage all isn't lost yet.|Happy
+0011_000745|The nastiest things they saw were the cobwebs.|Happy
+0011_000746|They'd never know I'd regular ran away.|Happy
+0011_000747|please excuse me.|Happy
+0011_000748|You are not a runaway,who are you?|Happy
+0011_000749|Then we all say aha!|Happy
+0011_000750|Rabbit gave dog a hurrying up sort of nudge.|Happy
+0011_001071|As rich as Peter's son in law!|Sad
+0011_001072|And what are doves. And what are doves.|Sad
+0011_001073|I thought you meant how old are you?|Sad
+0011_001074|The football teams give a tea party.|Sad
+0011_001075|She is now choosing skirt to wear.|Sad
+0011_001076|Let's make the noise a snake.|Sad
+0011_001077|Monster made a deep bow.|Sad
+0011_001078|She had said, so that one could keep up a conversation!|Sad
+0011_001079|Rat came and replied on the leaves.|Sad
+0011_001080|Must a name mean something?|Sad
+0011_001081|All smile were real and the happier the more sincere .|Sad
+0011_001082|Who is been repeating all that hard stuff to you?|Sad
+0011_001083|This used to be Jerry's occupation.|Sad
+0011_001084|A divine wrath made her blue eyes awful.|Sad
+0011_001085|The name really is the agedaged man.|Sad
+0011_001086|How I hate this foul pool!|Sad
+0011_001087|I think it'll encourage me.|Sad
+0011_001088|Hold up my chin, slow and solid.|Sad
+0011_001089|Our thanks to God's oath.|Sad
+0011_001090|In which fox loses a tail and its elder sister finds one.|Sad
+0011_001091|I chose the right way.|Sad
+0011_001092|She may mind ye of her.|Sad
+0011_001093|Story twenty nine a boy and a monkey.|Sad
+0011_001094|Take courage all isn't lost yet.|Sad
+0011_001095|The nastiest things they saw were the cobwebs.|Sad
+0011_001096|They'd never know I'd regular ran away.|Sad
+0011_001097|please excuse me.|Sad
+0011_001098|You are not a runaway,who are you?|Sad
+0011_001099|Then we all say aha!|Sad
+0011_001100|Rabbit gave dog a hurrying up sort of nudge.|Sad
+0011_001421|As rich as Peter's son in law!|Surprise
+0011_001422|And what are doves. And what are doves.|Surprise
+0011_001423|I thought you meant how old are you?|Surprise
+0011_001424|The football teams give a tea party.|Surprise
+0011_001425|She is now choosing skirt to wear.|Surprise
+0011_001426|Let's make the noise of a snake.|Surprise
+0011_001427|Monster made a deep bow.|Surprise
+0011_001428|She had said, so that one could keep up a conversation!|Surprise
+0011_001429|Rat came and replied on the leaves.|Surprise
+0011_001430|Must a name mean something?|Surprise
+0011_001431|All smile were real and the happier the more sincere .|Surprise
+0011_001432|Who is been repeating all that hard stuff to you?|Surprise
+0011_001433|This used to be Jerry's occupation.|Surprise
+0011_001434|A divine wrath made her blue eyes awful.|Surprise
+0011_001435|The name really is an agedaged man.|Surprise
+0011_001436|How I hate this foul pool!|Surprise
+0011_001437|I think it'll encourage me.|Surprise
+0011_001438|Hold up my chin, slow and solid.|Surprise
+0011_001439|Our thanks to God's oath.|Surprise
+0011_001440|In which fox loses a tail and its elder sister finds one.|Surprise
+0011_001441|I chose the right way.|Surprise
+0011_001442|She may mind ye of her.|Surprise
+0011_001443|Story twenty nine a boy and a monkey.|Surprise
+0011_001444|Take courage all isn't lost yet.|Surprise
+0011_001445|The nastiest things they saw were the cobwebs.|Surprise
+0011_001446|They'd never know I'd regular ran away.|Surprise
+0011_001447|please excuse me.|Surprise
+0011_001448|You are not a runaway,who are you?|Surprise
+0011_001449|Then we all say aha!|Surprise
+0011_001450|Rabbit gave dog a hurrying up sort of nudge.|Surprise

@@ -1,0 +1,100 @@
+0017_000001|The nine the eggs, I keep.|Neutral
+0017_000002|I did go, and made many prisoners.|Neutral
+0017_000003|That I owe my thanks to you.|Neutral
+0017_000004|They went up to the dark mass job had pointed out.|Neutral
+0017_000005|Clear than clear water!|Neutral
+0017_000006|Andy what's the gyre and to gimble.|Neutral
+0017_000007|I'm as bad as I can be.|Neutral
+0017_000008|That was his chief thought.|Neutral
+0017_000009|On the twenty second of last march.|Neutral
+0017_000010|A nauseous draught.|Neutral
+0017_000011|Chapter ten a warm welcome.|Neutral
+0017_000012|Her shoes were like fishes.|Neutral
+0017_000013|I have bunburyed all over goat on two separate occasions.|Neutral
+0017_000014|Annie please please don't hurt me!|Neutral
+0017_000015|Poor Tom now is dead!|Neutral
+0017_000016|Mister share man, I move for a division.|Neutral
+0017_000017|Why has this egg not broken?|Neutral
+0017_000018|Then sadly it is much further.|Neutral
+0017_000019|At the end of four.|Neutral
+0017_000020|At the roots of a bush of a grass.|Neutral
+0017_000351|The nine the eggs, I keep.|Angry
+0017_000352|I did go, and made many prisoners.|Angry
+0017_000353|That I owe my thanks to you.|Angry
+0017_000354|They went up to the dark mass job had pointed out.|Angry
+0017_000355|Clear than clear water!|Angry
+0017_000356|Andy what's the gyre and to gimble.|Angry
+0017_000357|I'm as bad as I can be.|Angry
+0017_000358|That was his chief thought.|Angry
+0017_000359|On the twenty second of last march.|Angry
+0017_000360|A nauseous draught.|Angry
+0017_000361|Chapter ten a warm welcome.|Angry
+0017_000362|Her shoes were like fishes.|Angry
+0017_000363|I have bunburyed all over goat on two separate occasions.|Angry
+0017_000364|Annie please please don't hurt me!|Angry
+0017_000365|Poor Tom now is dead!|Angry
+0017_000366|Mister share man, I move for a division.|Angry
+0017_000367|Why has this egg not broken?|Angry
+0017_000368|Then sadly it is much further.|Angry
+0017_000369|At the end of four.|Angry
+0017_000370|At the roots-of a bush of a grass.|Angry
+0017_000701|The nine the eggs, I keep.|Happy
+0017_000702|I did go, and made many prisoners.|Happy
+0017_000703|That I owe my thanks to you.|Happy
+0017_000704|They went up to the dark mass job had pointed out.|Happy
+0017_000705|Clear than clear water!|Happy
+0017_000706|Andy what's the gyre and to gimble.|Happy
+0017_000707|I'm as bad as I can be.|Happy
+0017_000708|That was his chief thought.|Happy
+0017_000709|On the twenty second of last march.|Happy
+0017_000710|A nauseous draught.|Happy
+0017_000711|Chapter ten a warm welcome.|Happy
+0017_000712|Her shoes were like fishes.|Happy
+0017_000713|I have bunburyed all over goat on two separate occasions.|Happy
+0017_000714|Annie please please don't hurt me!|Happy
+0017_000715|Poor Tom now is dead!|Happy
+0017_000716|Mister share man, I move for a division.|Happy
+0017_000717|Why has this egg not broken?|Happy
+0017_000718|Then sadly it is much further.|Happy
+0017_000719|At the end of four.|Happy
+0017_000720|At the roots-of a bush of a grass.|Happy
+0017_001051|The nine the eggs, I keep.|Sad
+0017_001052|I did go, and made many prisoners.|Sad
+0017_001053|That I owe my thanks to you.|Sad
+0017_001054|They went up to the dark mass job had pointed out.|Sad
+0017_001055|Clear than clear water!|Sad
+0017_001056|Andy what's the gyre and to gimble.|Sad
+0017_001057|I'm as bad as I can be.|Sad
+0017_001058|That was his chief thought.|Sad
+0017_001059|On the twenty second of last march.|Sad
+0017_001060|A nauseous draught.|Sad
+0017_001061|Chapter ten a warm welcome.|Sad
+0017_001062|Her shoes were like fishes.|Sad
+0017_001063|I have bunburyed all over goat on two separate occasions.|Sad
+0017_001064|Annie please please don't hurt me!|Sad
+0017_001065|Poor Tom now is dead!|Sad
+0017_001066|Mister share man, I move for a division.|Sad
+0017_001067|Why has this egg not broken?|Sad
+0017_001068|Then sadly it is much further.|Sad
+0017_001069|At the end of four.|Sad
+0017_001070|At the roots of a bush of a grass.|Sad
+0017_001401|The nine the eggs, I keep.|Surprise
+0017_001402|I did go, and made many prisoners.|Surprise
+0017_001403|That I owe my thanks to you.|Surprise
+0017_001404|They went up to the dark mass job had pointed out.|Surprise
+0017_001405|Clear than clear water!|Surprise
+0017_001406|Andy what's the gyre and to gimble.|Surprise
+0017_001407|I'm as bad as I can be.|Surprise
+0017_001408|That was his chief thought.|Surprise
+0017_001409|On the twenty second of last march.|Surprise
+0017_001410|A nauseous draught.|Surprise
+0017_001411|Chapter ten a warm welcome.|Surprise
+0017_001412|Her shoes were like fishes.|Surprise
+0017_001413|I have bunburyed all over goat on two separate occasions.|Surprise
+0017_001414|Annie please please don't hurt me!|Surprise
+0017_001415|Poor Tom now is dead!|Surprise
+0017_001416|Mister share man, I move for a division.|Surprise
+0017_001417|Why has this egg not broken?|Surprise
+0017_001418|Then sadly it is much further.|Surprise
+0017_001419|At the end of four.|Surprise
+0017_001420|At the roots-of a bush of a grass.|Surprise

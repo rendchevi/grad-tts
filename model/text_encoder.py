@@ -54,13 +54,13 @@ class ConvReluNorm(BaseModule):
         self.proj.weight.data.zero_()
         self.proj.bias.data.zero_()
 
-    def forward(self, x, x_mask):
+    def forward(self, x, x_mask, add_residual=True):
         x_org = x
         for i in range(self.n_layers):
             x = self.conv_layers[i](x * x_mask)
             x = self.norm_layers[i](x)
             x = self.relu_drop(x)
-        x = x_org + self.proj(x)
+        x = x_org + self.proj(x) if add_residual else self.proj(x)
         return x * x_mask
 
 
@@ -264,7 +264,7 @@ class Encoder(BaseModule):
                                        filter_channels, kernel_size, p_dropout=p_dropout))
             self.norm_layers_2.append(LayerNorm(hidden_channels))
 
-    def forward(self, x, x_mask):
+    def forward(self, x, x_mask, gammas=None, betas=None):
         attn_mask = x_mask.unsqueeze(2) * x_mask.unsqueeze(-1)
         for i in range(self.n_layers):
             x = x * x_mask
@@ -274,6 +274,12 @@ class Encoder(BaseModule):
             y = self.ffn_layers[i](x, x_mask)
             y = self.drop(y)
             x = self.norm_layers_2[i](x + y)
+
+            if gammas is not None:
+                gamma = gammas[:,i,:,:] # [B, D, 1]
+                beta = betas[:,i,:,:] # [B, D, 1]
+                x = (x * gamma) + beta
+
         x = x * x_mask
         return x
 
@@ -309,7 +315,7 @@ class TextEncoder(BaseModule):
         self.proj_w = DurationPredictor(n_channels + (spk_emb_dim if n_spks > 1 else 0), filter_channels_dp, 
                                         kernel_size, p_dropout)
 
-    def forward(self, x, x_lengths, spk=None):
+    def forward(self, x, x_lengths, spk=None, gammas=None, betas=None):
         x = self.emb(x) * math.sqrt(self.n_channels)
         x = torch.transpose(x, 1, -1)
         x_mask = torch.unsqueeze(sequence_mask(x_lengths, x.size(2)), 1).to(x.dtype)
@@ -317,7 +323,7 @@ class TextEncoder(BaseModule):
         x = self.prenet(x, x_mask)
         if self.n_spks > 1:
             x = torch.cat([x, spk.unsqueeze(-1).repeat(1, 1, x.shape[-1])], dim=1)
-        x = self.encoder(x, x_mask)
+        x = self.encoder(x, x_mask, gammas=gammas, betas=betas)
         mu = self.proj_m(x) * x_mask
 
         x_dp = torch.detach(x)

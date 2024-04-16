@@ -1,0 +1,150 @@
+0018_000021|As rich as Peter's son in law!|Neutral
+0018_000022|And what are doves. And what are doves.|Neutral
+0018_000023|I thought you meant how old are you?|Neutral
+0018_000024|The football teams give a tea party.|Neutral
+0018_000025|She is now choosing skirt to wear.|Neutral
+0018_000026|Let's make the noise a snake.|Neutral
+0018_000027|Monster made a deep bow.|Neutral
+0018_000028|She had said, so that one could keep up a conversation!|Neutral
+0018_000029|Rat came and replied on the leaves.|Neutral
+0018_000030|Must a name mean something?|Neutral
+0018_000031|All smile were real and the happier，the more sincere .|Neutral
+0018_000032|Who is been repeating all that hard stuff to you?|Neutral
+0018_000033|This used to be Jerry's occupation.|Neutral
+0018_000034|A divine wrath made her blue eyes awful.|Neutral
+0018_000035|The name really is the aged aged man.|Neutral
+0018_000036|How I hate this foul pool!|Neutral
+0018_000037|I think it'll encourage me.|Neutral
+0018_000038|Hold up my chin, slow and solid.|Neutral
+0018_000039|Our thanks to God's oath.|Neutral
+0018_000040|In which fox loses a tail and its elder sister finds one.|Neutral
+0018_000041|I chose the right way.|Neutral
+0018_000042|She may mind ye of her.|Neutral
+0018_000043|Story twenty nine a boy and a monkey.|Neutral
+0018_000044|Take courage all isn't lost yet.|Neutral
+0018_000045|The nastiest things they saw were the cobwebs.|Neutral
+0018_000046|They'd never know I'd regular ran away.|Neutral
+0018_000047|please excuse me.|Neutral
+0018_000048|You are not a runaway,who are you?|Neutral
+0018_000049|Then we all say aha!|Neutral
+0018_000050|Rabbit gave dog a hurrying up sort of nudge.|Neutral
+0018_000371|As rich as Peter's son in law!|Angry
+0018_000372|And what are doves. And what are doves.|Angry
+0018_000373|I thought you meant how old are you?|Angry
+0018_000374|The football teams give a tea party.|Angry
+0018_000375|She is now choosing skirt to wear.|Angry
+0018_000376|Let's make the noise a snake.|Angry
+0018_000377|Monster made a deep bow.|Angry
+0018_000378|She had said, so that one could keep up a conversation!|Angry
+0018_000379|Rat came and replied on the leaves.|Angry
+0018_000380|Must a name mean something?|Angry
+0018_000381|All smile were real and the happier，the more sincere .|Angry
+0018_000382|Who is been repeating all that hard stuff to you?|Angry
+0018_000383|This used to be Jerry's occupation.|Angry
+0018_000384|A divine wrath made her blue eyes awful.|Angry
+0018_000385|The name really is the aged aged man.|Angry
+0018_000386|How I hate this foul pool!|Angry
+0018_000387|I think it'll encourage me.|Angry
+0018_000388|Hold up my chin, slow and solid.|Angry
+0018_000389|Our thanks to God's oath.|Angry
+0018_000390|In which fox loses a tail and its elder sister finds one.|Angry
+0018_000391|I chose the right way.|Angry
+0018_000392|She may mind ye of her.|Angry
+0018_000393|Story twenty nine a boy and a monkey.|Angry
+0018_000394|Take courage all isn't lost yet.|Angry
+0018_000395|The nastiest things they saw were the cobwebs.|Angry
+0018_000396|They'd never know I'd regular ran away.|Angry
+0018_000397|please excuse me.|Angry
+0018_000398|You are not a runaway,who are you?|Angry
+0018_000399|Then we all say aha!|Angry
+0018_000400|Rabbit gave dog a hurrying up sort of nudge.|Angry
+0018_000721|As rich as Peter's son in law!|Happy
+0018_000722|And what are doves. And what are doves.|Happy
+0018_000723|I thought you meant how old are you?|Happy
+0018_000724|The football teams give a tea party.|Happy
+0018_000725|She is now choosing skirt to wear.|Happy
+0018_000726|Let's make the noise a snake.|Happy
+0018_000727|Monster made a deep bow.|Happy
+0018_000728|She had said, so that one could keep up a conversation!|Happy
+0018_000729|Rat came and replied on the leaves.|Happy
+0018_000730|Must a name mean something?|Happy
+0018_000731|All smile were real and the happier，the more sincere .|Happy
+0018_000732|Who is been repeating all that hard stuff to you?|Happy
+0018_000733|This used to be Jerry's occupation.|Happy
+0018_000734|A divine wrath made her blue eyes awful.|Happy
+0018_000735|The name really is the aged aged man.|Happy
+0018_000736|How I hate this foul pool!|Happy
+0018_000737|I think it'll encourage me.|Happy
+0018_000738|Hold up my chin, slow and solid.|Happy
+0018_000739|Our thanks to God's oath.|Happy
+0018_000740|In which fox loses a tail and its elder sister finds one.|Happy
+0018_000741|I chose the right way.|Happy
+0018_000742|She may mind ye of her.|Happy
+0018_000743|Story twenty nine a boy and a monkey.|Happy
+0018_000744|Take courage all isn't lost yet.|Happy
+0018_000745|The nastiest things they saw were the cobwebs.|Happy
+0018_000746|They'd never know I'd regular ran away.|Happy
+0018_000747|please excuse me.|Happy
+0018_000748|You are not a runaway,who are you?|Happy
+0018_000749|Then we all say aha!|Happy
+0018_000750|Rabbit gave dog a hurrying up sort of nudge.|Happy
+0018_001071|As rich-as Peter's son in law!|Sad
+0018_001072|And what are doves. And what are doves.|Sad
+0018_001073|I thought you meant how old are you?|Sad
+0018_001074|The football teams give a tea party.|Sad
+0018_001075|She is now choosing skirt to wear.|Sad
+0018_001076|Let's make the noise a snake.|Sad
+0018_001077|Monster made a deep bow.|Sad
+0018_001078|She had said, so that one could keep up a conversation!|Sad
+0018_001079|Rat came and replied on the leaves.|Sad
+0018_001080|Must a name mean something?|Sad
+0018_001081|All smile were real and the happier，the more sincere .|Sad
+0018_001082|Who is been repeating all that hard stuff to you?|Sad
+0018_001083|This used to be Jerry's occupation.|Sad
+0018_001084|A divine wrath made her blue eyes awful.|Sad
+0018_001085|The name really is the aged aged man.|Sad
+0018_001086|How I hate this foul pool!|Sad
+0018_001087|I think it'll encourage me.|Sad
+0018_001088|Hold up my chin, slow and solid.|Sad
+0018_001089|Our thanks to God's oath.|Sad
+0018_001090|In which fox loses a tail and its elder sister finds one.|Sad
+0018_001091|I chose the right way.|Sad
+0018_001092|She may mind ye of her.|Sad
+0018_001093|Story twenty nine a boy and a monkey.|Sad
+0018_001094|Take courage all isn't lost yet.|Sad
+0018_001095|The nastiest things they saw were the cobwebs.|Sad
+0018_001096|They'd never know I'd regular ran away.|Sad
+0018_001097|please excuse me.|Sad
+0018_001098|You are not a runaway,who are you?|Sad
+0018_001099|Then we all say aha!|Sad
+0018_001100|Rabbit gave dog a hurrying up sort of nudge.|Sad
+0018_001421|As rich as Peter's son in law!|Surprise
+0018_001422|And what are doves. And what are doves.|Surprise
+0018_001423|I thought you meant how old are you?|Surprise
+0018_001424|The football teams give a tea party.|Surprise
+0018_001425|She is now choosing skirt to wear.|Surprise
+0018_001426|Let's make the noise a snake.|Surprise
+0018_001427|Monster made a deep bow.|Surprise
+0018_001428|She had said, so that one could keep up a conversation!|Surprise
+0018_001429|Rat came and replied on the leaves.|Surprise
+0018_001430|Must a name mean something?|Surprise
+0018_001431|All smile were real and the happier，the more sincere .|Surprise
+0018_001432|Who is been repeating all that hard stuff to you?|Surprise
+0018_001433|This used to be Jerry's occupation.|Surprise
+0018_001434|A divine wrath made her blue eyes awful.|Surprise
+0018_001435|The name really is the aged aged man.|Surprise
+0018_001436|How I hate this foul pool!|Surprise
+0018_001437|I think it'll encourage me.|Surprise
+0018_001438|Hold up my chin, slow and solid.|Surprise
+0018_001439|Our thanks to God's oath.|Surprise
+0018_001440|In which fox loses a tail and its elder sister finds one.|Surprise
+0018_001441|I chose the right way.|Surprise
+0018_001442|She may mind ye of her.|Surprise
+0018_001443|Story twenty nine a boy and a monkey.|Surprise
+0018_001444|Take courage all isn't lost yet.|Surprise
+0018_001445|The nastiest things they saw were the cobwebs.|Surprise
+0018_001446|They'd never know I'd regular ran away.|Surprise
+0018_001447|please excuse me.|Surprise
+0018_001448|You are not a runaway,who are you?|Surprise
+0018_001449|Then we all say aha!|Surprise
+0018_001450|Rabbit gave dog a hurrying up sort of nudge.|Surprise

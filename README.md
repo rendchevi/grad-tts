@@ -28,7 +28,10 @@ pip install -r requirements.txt
 Secondly, build `monotonic_align` code (Cython):
 
 ```bash
-cd model/monotonic_align; python setup.py build_ext --inplace; cd ../..
+cd model/monotonic_align
+mkdir model
+mkdir model/monotonic_align
+python setup.py build_ext --inplace
 ```
 
 **Note**: code is tested on Python==3.6.9.

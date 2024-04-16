@@ -10,6 +10,7 @@ import math
 import random
 
 import torch
+import torch.nn.functional as F
 
 from model import monotonic_align
 from model.base import BaseModule
@@ -18,11 +19,33 @@ from model.diffusion import Diffusion
 from model.utils import sequence_mask, generate_path, duration_loss, fix_len_compatibility
 
 
+from model.reference_encoder import ReferenceEncoder
+
+
 class GradTTS(BaseModule):
-    def __init__(self, n_vocab, n_spks, spk_emb_dim, n_enc_channels, filter_channels, filter_channels_dp, 
-                 n_heads, n_enc_layers, enc_kernel, enc_dropout, window_size, 
-                 n_feats, dec_dim, beta_min, beta_max, pe_scale):
-        super(GradTTS, self).__init__()
+    def __init__(
+        self,
+        n_vocab,
+        n_spks,
+        spk_emb_dim,
+        n_enc_channels,
+        filter_channels,
+        filter_channels_dp, 
+        n_heads, n_enc_layers, enc_kernel, enc_dropout, window_size, 
+        n_feats, dec_dim, beta_min, beta_max, pe_scale,
+        with_reference_encoder=False,
+        re_n_feats=None,
+        re_n_channels=None,
+        re_filter_channels=None,
+        re_n_heads=None,
+        re_n_layers=None,
+        re_kernel_size=None,
+        re_p_dropout=None,
+        with_film=False,
+    ):
+
+        super().__init__()
+
         self.n_vocab = n_vocab
         self.n_spks = n_spks
         self.spk_emb_dim = spk_emb_dim
@@ -42,13 +65,37 @@ class GradTTS(BaseModule):
 
         if n_spks > 1:
             self.spk_emb = torch.nn.Embedding(n_spks, spk_emb_dim)
-        self.encoder = TextEncoder(n_vocab, n_feats, n_enc_channels, 
-                                   filter_channels, filter_channels_dp, n_heads, 
-                                   n_enc_layers, enc_kernel, enc_dropout, window_size)
+
+        self.encoder = TextEncoder(
+            n_vocab, n_feats, n_enc_channels, 
+            filter_channels, filter_channels_dp, n_heads, 
+            n_enc_layers, enc_kernel, enc_dropout, window_size
+        )
         self.decoder = Diffusion(n_feats, dec_dim, n_spks, spk_emb_dim, beta_min, beta_max, pe_scale)
 
+        # Reference Encoder
+        self.with_reference_encoder = with_reference_encoder
+        self.with_film = with_film
+        if with_reference_encoder:
+            self.reference_encoder = ReferenceEncoder(
+                n_feats=re_n_feats,
+                n_channels=re_n_channels,
+                filter_channels=re_filter_channels,
+                n_heads=re_n_heads,
+                n_layers=re_n_layers,
+                kernel_size=re_kernel_size,
+                p_dropout=re_p_dropout,
+                with_film=with_film,
+                with_aux_clf=True,
+            )
+
+
+
+
     @torch.no_grad()
-    def forward(self, x, x_lengths, n_timesteps, temperature=1.0, stoc=False, spk=None, length_scale=1.0):
+    def forward(
+        self, x, x_lengths, n_timesteps, temperature=1.0, stoc=False, spk=None, length_scale=1.0
+    ):
         """
         Generates mel-spectrogram from text. Returns:
             1. encoder outputs
@@ -98,7 +145,10 @@ class GradTTS(BaseModule):
 
         return encoder_outputs, decoder_outputs, attn[:, :, :y_max_length]
 
-    def compute_loss(self, x, x_lengths, y, y_lengths, spk=None, out_size=None):
+    def compute_loss(
+        self, x, x_lengths, y, y_lengths, spk=None, out_size=None,
+        labels=None,
+    ):
         """
         Computes 3 losses:
             1. duration loss: loss between predicted token durations and those extracted by Monotinic Alignment Search (MAS).
@@ -115,12 +165,23 @@ class GradTTS(BaseModule):
         """
         x, x_lengths, y, y_lengths = self.relocate_input([x, x_lengths, y, y_lengths])
 
+        # Get reference embedding and conditioning
+        if self.with_reference_encoder:
+            ref_embeddings, gammas, betas = self.reference_encoder(y, y_lengths)
+
+            if self.reference_encoder.with_aux_clf:
+                aux_logits = self.reference_encoder.aux_clf(ref_embeddings)
+                aux_clf_loss = F.cross_entropy(aux_logits, labels)
+
         if self.n_spks > 1:
             # Get speaker embedding
             spk = self.spk_emb(spk)
         
         # Get encoder_outputs `mu_x` and log-scaled token durations `logw`
-        mu_x, logw, x_mask = self.encoder(x, x_lengths, spk)
+        if not self.with_film:
+            mu_x, logw, x_mask = self.encoder(x, x_lengths, spk)
+        elif self.with_film:
+            mu_x, logw, x_mask = self.encoder(x, x_lengths, spk, gammas=gammas, betas=betas)
         y_max_length = y.shape[-1]
 
         y_mask = sequence_mask(y_lengths, y_max_length).unsqueeze(1).to(x_mask)
@@ -178,4 +239,8 @@ class GradTTS(BaseModule):
         prior_loss = torch.sum(0.5 * ((y - mu_y) ** 2 + math.log(2 * math.pi)) * y_mask)
         prior_loss = prior_loss / (torch.sum(y_mask) * self.n_feats)
         
-        return dur_loss, prior_loss, diff_loss
+        return dur_loss, prior_loss, diff_loss, aux_clf_loss
+
+
+
+

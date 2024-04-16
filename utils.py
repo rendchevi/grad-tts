@@ -73,3 +73,20 @@ def save_plot(tensor, savepath):
     plt.savefig(savepath)
     plt.close()
     return
+
+
+class DictToAttr:
+    def __init__(self, dictionary):
+        self.dictionary = dictionary
+
+        for k, v in dictionary.items():
+            setattr(self, k, v)
+
+class Struct:
+    def __init__(self, **entries):
+        self.__dict__.update(entries)
+
+class AttrDict(dict):
+    def __init__(self, *args, **kwargs):
+        super(AttrDict, self).__init__(*args, **kwargs)
+        self.__dict__ = self

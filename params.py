@@ -7,9 +7,10 @@
 # MIT License for more details.
 
 from model.utils import fix_len_compatibility
-
+from text.symbols import symbols
 
 # data parameters
+n_vocab = len(symbols)+1
 train_filelist_path = 'resources/filelists/ljspeech/train.txt'
 valid_filelist_path = 'resources/filelists/ljspeech/valid.txt'
 test_filelist_path = 'resources/filelists/ljspeech/test.txt'
@@ -51,3 +52,14 @@ learning_rate = 1e-4
 seed = 37
 save_every = 1
 out_size = fix_len_compatibility(2*22050//256)
+
+# reference encoder parameters
+with_reference_encoder = True
+with_film = True
+re_n_feats = 80
+re_n_channels = 192
+re_filter_channels = 768
+re_n_heads = 2
+re_n_layers = 6
+re_kernel_size = 3
+re_p_dropout = 0.1

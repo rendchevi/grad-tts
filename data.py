@@ -7,7 +7,10 @@
 # MIT License for more details.
 
 import random
+import os
+import json
 import numpy as np
+import librosa
 
 import torch
 import torchaudio as ta
@@ -101,11 +104,14 @@ class TextMelBatchCollate(object):
 
 
 class TextMelSpeakerDataset(torch.utils.data.Dataset):
-    def __init__(self, filelist_path, cmudict_path, add_blank=True,
-                 n_fft=1024, n_mels=80, sample_rate=22050,
-                 hop_length=256, win_length=1024, f_min=0., f_max=8000):
+    def __init__(
+            self, filelist_path, cmudict_path, add_blank=True,
+            n_fft=1024, n_mels=80, sample_rate=22050,
+            hop_length=256, win_length=1024, f_min=0., f_max=8000,
+            split_char="|", label2id_path=None, fileroot=None, fileext=".wav",
+        ):
         super().__init__()
-        self.filelist = parse_filelist(filelist_path, split_char='|')
+        self.filelist = parse_filelist(filelist_path, split_char=split_char)
         self.cmudict = cmudict.CMUDict(cmudict_path)
         self.n_fft = n_fft
         self.n_mels = n_mels
@@ -118,16 +124,25 @@ class TextMelSpeakerDataset(torch.utils.data.Dataset):
         random.seed(random_seed)
         random.shuffle(self.filelist)
 
+        if label2id_path is not None:
+            self.label2id = json.load(open(label2id_path, "r"))
+
+        self.fileroot = fileroot
+        self.fileext = fileext
+
     def get_triplet(self, line):
         filepath, text, speaker = line[0], line[1], line[2]
+        if self.fileroot is not None:
+            filepath = os.path.join(self.fileroot, speaker, filepath + self.fileext)
         text = self.get_text(text, add_blank=self.add_blank)
         mel = self.get_mel(filepath)
         speaker = self.get_speaker(speaker)
         return (text, mel, speaker)
 
     def get_mel(self, filepath):
-        audio, sr = ta.load(filepath)
-        assert sr == self.sample_rate
+        # audio, sr = ta.load(filepath)
+        # assert sr == self.sample_rate
+        audio = torch.FloatTensor(librosa.load(filepath, sr=self.sample_rate)[0]).unsqueeze(0)
         mel = mel_spectrogram(audio, self.n_fft, self.n_mels, self.sample_rate, self.hop_length,
                               self.win_length, self.f_min, self.f_max, center=False).squeeze()
         return mel
@@ -140,7 +155,7 @@ class TextMelSpeakerDataset(torch.utils.data.Dataset):
         return text_norm
 
     def get_speaker(self, speaker):
-        speaker = torch.LongTensor([int(speaker)])
+        speaker = torch.LongTensor([int(speaker)]) if self.label2id is None else torch.LongTensor([int(self.label2id[speaker])])
         return speaker
 
     def __getitem__(self, index):
@@ -184,3 +199,4 @@ class TextMelSpeakerBatchCollate(object):
         x_lengths = torch.LongTensor(x_lengths)
         spk = torch.cat(spk, dim=0)
         return {'x': x, 'x_lengths': x_lengths, 'y': y, 'y_lengths': y_lengths, 'spk': spk}
+
